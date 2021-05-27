@@ -1,0 +1,413 @@
+.game-buy-header {
+    width: 100%;
+    height: 60rem;
+    background-image: url(../../Photos/game-buy-header-bg.jpg);
+    background-size: 100% 100%;
+}
+
+
+.game-buy-header-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+.header-text-title {
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 12rem;
+}
+
+.header-texts {
+    font-size: 18px;
+}
+
+
+.game-buy-main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    height: 80rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.game-buy-img-box {
+    width: 45%;
+    height: 50rem;
+    background-color: rgb(245, 240, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.game-buy-info-box {
+    width: 45%;
+    height: 50rem;
+
+}
+
+.game-buy-product {
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+}
+
+.product-raiting {
+    font-size: 14px;
+}
+
+.product-name {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.first-star {
+    margin-left: 15px;
+}
+
+.product-short-decription {
+    font-size: 18px;
+    line-height: 25px;
+    color: #6c6c6c;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.product-short-info {
+    width: 95%;
+    height: 18rem;
+    border: 1px solid #6c6c6c;
+    margin-top: 35px;
+    position: relative;
+}
+
+.product-short-info-title {
+    font-size: 18px;
+    color: #6c6c6c;
+    top: -20px;
+    position: relative;
+    background: #fff;
+    width: 122px;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.buy-button {
+    padding: 10px 30px;
+    margin-top: 25px;
+    background-color: #eaae46;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.product-guaranted {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.guaranted-images {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none
+}
+
+.game-buy-main-two {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ebebeb;
+}
+
+.product-info-target {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #6c6c6c;
+    padding: 20px 25px;
+    height: 100%;
+}
+
+.product-info-target li {
+    margin-left: 15px;
+}
+
+.source {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.source:hover {
+    color: #eaae46;
+}
+
+.target {
+    padding: 0 25px;
+    border-top: 1px solid #ebebeb;
+}
+
+.target p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.target-2 {
+    font-size: 18px;
+}
+
+.shipping-price {
+    padding: 20px;
+}
+
+.shipping-time {
+    padding: 0 20px;
+}
+
+.shipping-dates {
+    padding: 20px;
+}
+
+.target-3 {
+    height: 60rem;
+}
+
+.review-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 50rem;
+}
+
+.review-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.name-label {
+    padding: 10px 0;
+}
+
+.email-label {
+    padding: 10px 0;
+}
+
+.review-label {
+    padding: 10px 0;
+}
+
+.name-input {
+    padding: 15px 10px;
+    width: 100%;
+    background-color: #ebebeb;
+    border: none;
+}
+
+.email-input {
+    padding: 15px 10px;
+    width: 100%;
+    background-color: #ebebeb;
+    border: none;
+}
+
+.name-input:focus,
+.email-input:focus,
+.review-area:focus {
+    outline: none;
+}
+
+.rate-box {
+    margin: 15px 0;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+
+#rateYo {
+    margin-left: 10px;
+}
+
+.review-area {
+    width: 100%;
+    height: 15rem;
+    padding: 15px 10px;
+    background-color: #ebebeb;
+    border: none;
+}
+
+.review-submit {
+    padding: 15px 35px;
+    background-color: #eaae46;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 20px;
+}
+
+
+.review-submit:hover {
+    background-color: #ffb432;
+}
+
+.game-buy-main-three {
+    width: 100%;
+    height: 80rem;
+    margin-top: 15rem;
+    background-color: #ebebeb;
+}
+
+.game-buy-main-three-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 50rem;
+    padding-top: 5rem;
+}
+
+.main-slider-info {
+    background-color: black;
+}
+
+.related-text {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.related-text::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: #eaae46;
+    transition: width .3s;
+    margin-top: 5px;
+}
+
+.related-text::after {
+    width: 10%;
+    transition: width .3s;
+}
+
+@media(max-width: 900px) {
+
+    .game-buy-main {
+        width: 100%;
+        height: 100rem;
+        flex-direction: column;
+        margin-top: 5rem;
+        justify-content: flex-start;
+    }
+
+    .game-buy-header {
+        height: 40rem;
+    }
+
+    .game-buy-img-box {
+        width: 100%;
+
+
+    }
+
+    .game-buy-info-box {
+        width: 100%;
+
+    }
+
+    .buy-button-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-guaranted {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .product-name {
+        text-align: center;
+    }
+
+    .product-price {
+        justify-content: center;
+    }
+
+    .product-short-info {
+        width: 100%;
+    }
+}
+
+@media(max-width: 750px) {
+
+    .game-buy-main {
+        height: 130rem;
+    }
+
+    .product-short-info {
+        height: 25rem;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    .game-buy-main {
+        height: 115rem;
+    }
+
+    .product-info-target {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .product-info-target li {
+        margin-top: 5px;
+    }
+
+
+}
+
+@media(max-width: 400px) {
+
+
+    .product-short-info {
+        height: 22rem;
+    }
+
+
+
+    .guaranteed-image {
+        width: 80%;
+    }
+}

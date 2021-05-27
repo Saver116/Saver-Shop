@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Saver Shop-Register
+    </title>
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
+    <link rel="stylesheet" type="text/css" href="Style/style-login.css">
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <link rel="icon" href="Photos/logo-img.png" type="images/x-icon">
+    <script src="https://kit.fontawesome.com/5de56048f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .login-password {
+            width: 50%;
+        }
+
+        .login-sign-in {
+            background-color: rgb(220, 220, 220);
+            color: grey;
+        }
+
+        .login-sign-up {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="go-top">
+    </div>
+
+    <div class="header-login">
+
+        <div class="burger-menu">
+            <div class="nav-toggle">
+                <div class="nav-toggle-bar"></div>
+            </div>
+
+            <nav id="nav" class="nav">
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="News.html">News</a></li>
+                    <li><a href="About-us.html">Contact</a></li>
+                    <li><a href="Login.html"><img src="Photos/profile-user.svg" class="user-icon"></a></li>
+                    <li><a> <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span
+                                    class="badge badge-notify my-cart-badge"></span></span>
+                        </a></a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="nav-menu-box">
+            <div class="nav-menu" id="navMenu">
+
+                <div class="logo-box">
+                    <a href="#" class="menu-item"><img src="Photos/logo4.png" class="logo"></a>
+                </div>
+                <div class="menu-items-box">
+                    <a href="Homepage.html" class="menu-item menu-word">Home</a>
+                    <a href="News.html" class="menu-item menu-word">News</a>
+                    <a href="About-us.html" class="menu-item menu-word">Contact</a>
+                    <a href="Login.html" class="menu-item"><img src="Photos/profile-user.svg" class="user-icon"></a>
+
+                    <span class="menu-item card"> <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span
+                                class="badge badge-notify my-cart-badge"></span></span>
+                    </span>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="login-box">
+        <div class="login-container">
+            <div class="login-mods">
+                <div class="login-mods-box">
+                    <a href="Login.html">
+                        <div class="login-sign-in">Sign in</div>
+                    </a>
+                </div>
+                <div class="login-mods-box">
+                    <a href="Register.html">
+                        <div class="login-sign-up">Sign up</div>
+                    </a>
+                </div>
+            </div>
+            <div id="sign-in">
+                <div class="login-text">Enter your personal details to <span class="login-special-text">create an
+                        account</span>
+                </div>
+                <div class="login-form-box">
+                    <form class="login-form" action="Login.html">
+                        <input type="text" class="login-email" placeholder="Username" required>
+                        <div class="login-password-box">
+                            <input type="password" class="login-password" placeholder="Password" required id="password">
+                            <div class="password-return"> <input type="password" class="login-password-return"
+                                    placeholder="Repeat Password" required id="password">
+                            </div>
+                        </div>
+                        <div class="login-form-button-box">
+                            <div class="register-agree">By creating an account you agree to our<span
+                                    class="login-special-text"> Terms & Privacy</span></div>
+                            <button type="submit" class="login-button">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Javascript/jquery-2.2.3.min.js"></script>
+    <script type='text/javascript' src="Javascript/bootstrap.min.js"></script>
+    <script type='text/javascript' src="Javascript/jquery.mycart.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="Javascript/mains.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            var goToCartIcon = function ($addTocartBtn) {
+                var $cartIcon = $(".my-cart-icon");
+                var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
+                $addTocartBtn.prepend($image);
+                var position = $cartIcon.position();
+                $image.animate({
+                    top: position.top,
+                }, 300, "linear", function () {
+                    $image.remove();
+                });
+            }
+
+            $('.my-cart-btn').myCart({
+                currencySymbol: '$',
+                classCartIcon: 'my-cart-icon',
+                classCartBadge: 'my-cart-badge',
+                classProductQuantity: 'my-product-quantity',
+                classProductRemove: 'my-product-remove',
+                classCheckoutCart: 'my-cart-checkout',
+                affixCartIcon: true,
+                showCheckoutModal: true,
+                numberOfDecimals: 2,
+
+                clickOnAddToCart: function ($addTocart) {
+                    goToCartIcon($addTocart);
+                },
+                afterAddOnCart: function (products, totalPrice, totalQuantity) {
+                    console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+                },
+                clickOnCartIcon: function ($cartIcon, products, totalPrice, totalQuantity) {
+                    console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+                },
+                checkoutCart: function (products, totalPrice, totalQuantity) {
+                    var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+                },
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+.ordering-main {
+    width: 80%;
+    margin: 0 auto;
+    height: 85rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15rem;
+    margin-bottom: 3rem;
+}
+
+.ordering-main-left-box {
+    width: 60%;
+    height: 100%;
+}
+
+.ordering-main-right-box {
+    width: 40%;
+    height: 100%;
+    border-left: 1px solid #6c6c6c;
+    background-color: #ebebeb;
+}
+
+.contact-info-title {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.contact-info-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.contact-info-text-box-1 {
+    font-size: 18px;
+}
+
+.contact-info-text-box-2 {
+    font-size: 14px;
+    padding-right: 20px;
+}
+
+.contact-info-text-box-2 a {
+    color: blue;
+}
+
+.email-input {
+    width: 97%;
+    height: 5rem;
+    background-color: #e6e6e6;
+    border: none;
+    padding: 15px;
+}
+
+.phone-input {
+    width: 97%;
+    height: 5rem;
+    background-color: #e6e6e6;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.card-input {
+    width: 97%;
+    height: 5rem;
+    background-color: #e6e6e6;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.shipping-info-text-box {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.name-last_name-input-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.name-input {
+    width: 47%;
+    height: 5rem;
+    background-color: #e6e6e6;
+    border: none;
+    padding: 15px;
+}
+
+.l-name-input {
+    width: 47%;
+    height: 5rem;
+    background-color: #e6e6e6;
+    border: none;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.adress-input {
+    width: 97%;
+    height: 5rem;
+    background-color: #e6e6e6;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.apartment-input {
+    width: 97%;
+    height: 5rem;
+    background-color: #e6e6e6;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.code-city-input-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.postal-code-input {
+    width: 47%;
+    height: 5rem;
+    background-color: #e6e6e6;
+    border: none;
+    padding: 15px;
+}
+
+.city-input {
+    width: 47%;
+    height: 5rem;
+    background-color: #e6e6e6;
+    border: none;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.country-input-box {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.table{
+    margin-top: 25px;
+}
+.submit-button {
+    padding: 15px 35px;
+    background-color: #eaae46;
+    margin-top: 20px;
+    border: none;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
+}
+.submit-button:hover{
+    background-color: #ffb432;
+}
+.nav-toggle .nav-toggle-bar,
+.nav-toggle .nav-toggle-bar::after,
+.nav-toggle .nav-toggle-bar::before {
+    background: #000000;
+}
+
+
+.nav-toggle.expanded .nav-toggle-bar::after,
+.nav-toggle.expanded .nav-toggle-bar::before {
+    background: #000000;
+}
+
+
+@media(max-width: 900px) {
+    .ordering-main {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 150rem;
+
+    }
+
+    .ordering-main-left-box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ordering-main-right-box {
+        width: 100%;
+        height: 100%;
+        border-left: 1px solid #6c6c6c;
+        background-color: #ebebeb;
+        margin-top: 3rem;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .name-last_name-input-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+
+    .name-input {
+        width: 97%;
+        height: 5rem;
+    }
+
+    .l-name-input {
+        width: 97%;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+
+    .code-city-input-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .postal-code-input {
+        width: 97%;
+    }
+
+    .city-input {
+        width: 97%;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+}
